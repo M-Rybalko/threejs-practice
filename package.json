@@ -1,0 +1,26 @@
+{
+  "name": "threejs-practice",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run lint"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/three": "^0.177.0",
+    "gts": "^6.0.2",
+    "three": "^0.177.0",
+    "typescript": "^5.6.3",
+    "vite": "^7.0.0"
+  }
+}
